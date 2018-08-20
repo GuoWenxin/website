@@ -1,0 +1,17 @@
+.bodystyle{background-color: #002779}
+.logostyle{text-align: center;margin-top: 50px}
+.formloginstyle{background-image: url(./image/login_m_bg.png);width: 403px;height: 302px;margin: 0 auto;margin-top: 50px}
+.formregisterstyle{background-image: url(./image/register_m_bg.png);width: 403px;height: 380px;margin: 0 auto;margin-top: 50px}
+
+.titlestyle{text-align: center;color: #000000;position: relative;top: 20px}
+h3{color:#4f5d80; text-transform:uppercase; font-size:15px; font-weight:normal; margin-left:20px;}
+.inputstyle{background-image: url(./image/login_bgx.gif) 0-696px repeat-x;height: 32px;width: 359px;line-height: 32px; border:1px solid #bbb ;border-radius: 5px; margin-left: 20px;margin-bottom: 5px}
+
+.btnloginstyle{ background:url(./image/site_bg.png) no-repeat -153px -850px; width: 122px;height: 32px;border: none;font-size: 14px;color: #FFF;font-weight: bold;padding-bottom: 2px;margin-left: 200px}
+.btnregisterstyle{ background:url(./image/site_bg.png) no-repeat -153px -850px; width: 122px;height: 32px;border: none;font-size: 14px;color: #FFF;font-weight: bold;padding-bottom: 2px;margin-left: 50px}
+.btnstyle{ background:url(./image/site_bg.png) no-repeat -153px -850px; width: 122px;height: 32px;border: none;font-size: 14px;color: #FFF;font-weight: bold;padding-bottom: 2px}
+
+.btnstyle login{}
+
+.btnsstyle{margin-top: 0px;margin-left: 80px}
+h5{color: white;text-align: center;}

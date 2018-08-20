@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>请登录</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function button_onclick(){
+		//这里写你要执行的语句
+		//alert("这是调用函数");
+		window.location.href='./login/register.html';
+		}
+		function forgetPsw()
+		{
+			alert("请联系管理员找回密码!");
+		}
+	</script>
+</head>
+<body class="bodystyle">
+<!-- logo行 -->
+<div class="logostyle"><img src="./image/logo.png" width="196" height="46"></div>
+<div class="formloginstyle">
+<h2 class="titlestyle" >请登录</h2>
+<form action="./server/login.php" method="post">
+	<h3>用户名:</h3>
+	<input type="text" class="inputstyle" name="name" placeholder="请输入用户名">
+	<h3>密 码:</h3>
+	<input type="password" class="inputstyle" name="psw" placeholder="请输入密码">
+	<div class="btnsstyle">
+	<table>
+		<tr>
+			<td></td>
+			<td><a href="javascript:forgetPsw();">forget password</a></td>
+		</tr>
+		<tr>
+			<td><input type="button" class="btnstyle" value="注册" onclick="button_onclick()"></td>
+			<td><input type="submit" class="btnstyle" value="登录"></td>
+		</tr>
+	</table>
+	</div>
+</form>
+<br/><br/><br/>
+<h5>more infomation</h5>
+</div>
+</body>
+</html>
