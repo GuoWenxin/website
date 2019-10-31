@@ -4,6 +4,12 @@
 	<title>注册新用户</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="../style.css">
+	<script type="text/javascript">
+	function onclickloginbtn()
+	{
+		window.location.href="../index.html";
+	}
+	</script>
 </head>
 <body class="bodystyle">
 <div class="logostyle"><img src="../image/logo.png" width="196" height="46"></div>
@@ -16,7 +22,8 @@
 	<input type="password" class="inputstyle" name="psw" placeholder="请输入密码">
 	<h3>确认密码:</h3>
 	<input type="password" class="inputstyle" name="repsw" placeholder="请再次输入密码">
-	<div style="text-align: center; margin-top:15px"class="btnsstyle">
+	<div style="text-align: center; margin-top:15px">
+			<input type="button" class="btnstyle" onclick="onclickloginbtn()" value="登录">
 			<input type="submit" class="btnstyle" value="注册">
 	</div>
 </form>

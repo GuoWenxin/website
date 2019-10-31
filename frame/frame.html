@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>后台管理中心</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+		var name="";
+		function GetParams()
+		{
+			var path=window.location.href;
+			var params=path.split('?');
+			for(var i=1;i<params.length;i++)
+			{
+				var p=params[i].split('=');
+				if (p[0]=='user') {
+					name=p[1];
+					var topframe=document.getElementById('frame_top');
+					topframe.contentWindow.document.getElementById('user').innerHTML=name;
+				};
+			}
+
+		}
+	</script>
+
+<frameset rows="80,*" onload="GetParams()">
+	<frame id="frame_top" src="frame_top.html"></frame>
+	<frameset cols="175,*" noresize="noresize">
+			<frame src="frmae_left.html"></frame>
+			<frame src="frame_right.html" name="frame_right"></frame>
+	</frameset>
+</frameset>
+
+</head>
+</html>

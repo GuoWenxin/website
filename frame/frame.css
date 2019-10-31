@@ -1,0 +1,17 @@
+*{margin:0;padding:0;}
+html,body{height:100%;text-align:center;}
+
+.box{width:204px;height:100%;margin:0 auto;height:100%;background:url(../image/menuboxbg.gif) repeat-y left top;}
+.box ul{list-style:none;text-align:left;}
+.menu li.level1 a{display:block;line-height:31px;height:31px;padding-left:50px; font-size:12px;color:#fff;background:url(../image/menubg.gif) no-repeat left top;}
+/*一级菜单两态样式,供JS调用*/
+.menu li.level1 a.hove{background-position:left -31px;}
+.menu li.level1 a.cur{background-position:left -62px;}
+
+/*二级菜单*/
+.menu li ul{padding-left:10px;overflow:hidden;}
+.menu li ul.level2{width:180px;display:none;}
+.menu li ul.level2 li{height:26px;line-height:26px;}
+.menu li ul.level2 li a{display:block;height:26px;line-height:26px;background:#E7E3E7 url(../image/t1.gif) no-repeat 30px center;padding-left:50px;color:#42556B;border-top:1px #B8C2CB solid;overflow:hidden;}
+/*二级菜单两态样式,供JS调用*/
+.menu li ul.level2 li a.hove1{background:#F6F6F6 url(../image/t2.gif) no-repeat 30px center;}

@@ -4,20 +4,11 @@
 	<title>请登录</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript">
-		function button_onclick(){
-		//这里写你要执行的语句
-		//alert("这是调用函数");
-		window.location.href='./login/register.html';
-		}
-		function forgetPsw()
-		{
-			alert("请联系管理员找回密码!");
-		}
+	<script type="text/javascript"  src="javascripts/loginjavascript.js">
+		
 	</script>
 </head>
 <body class="bodystyle">
-<!-- logo行 -->
 <div class="logostyle"><img src="./image/logo.png" width="196" height="46"></div>
 <div class="formloginstyle">
 <h2 class="titlestyle" >请登录</h2>
@@ -26,6 +17,13 @@
 	<input type="text" class="inputstyle" name="name" placeholder="请输入用户名">
 	<h3>密 码:</h3>
 	<input type="password" class="inputstyle" name="psw" placeholder="请输入密码">
+	<div>
+ 	<h3>输入验证码:</h3>
+ 	<input type="hidden" name="yzmconent" id="yzmconent" value="null">
+ 	<input type="text" class="inputstyle" name="yzm" id="Yzm" style="width:230px" placeholder="请输入验证码">
+ 	<input type = "button" id="code" value="点我验证" class="btnstyle" style="margin:0;float: right;width:20%" onclick="createCode()"/>
+ 	<br/>
+	</div>
 	<div class="btnsstyle">
 	<table>
 		<tr>
@@ -38,7 +36,7 @@
 		</tr>
 	</table>
 	</div>
-</form>
+</form> 
 <br/><br/><br/>
 <h5>more infomation</h5>
 </div>

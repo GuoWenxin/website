@@ -4,6 +4,15 @@ include_once SERVER_PATH."checksession.php";
 include_once SERVER_PATH."globalconst.php";
 $name=$_POST["name"];
 $psw=$_POST["psw"];
+$yzm0=$_POST["yzmconent"];
+$yzm1=$_POST["yzm"];
+$yzm1=strtoupper($yzm1);
+//验证码处理
+if ($yzm0=="null" || $yzm0!=$yzm1) {
+	# code...
+	echo "<script>alert('请输入正确的验证码!');window.location.href='../index.html';</script>";
+	return;
+}
 //连接数据库
 $mydata=mysqli_connect(DB_IP,DB_LOGIN_NAME,DB_LOGIN_PSW);
 if (mysqli_connect_error()) {
@@ -32,7 +41,8 @@ else
 {
 	if ($psw==$num_result[0]) {
 		# code...
-		echo "<script>window.location.href='../upload/index.html';</script>";
+		//echo "<script>window.location.href='../upload/index.html';</script>";
+		echo "<script>window.location.href='../frame/frame.html?user=".$name."';</script>";
 		setTime();
 	}
 	else

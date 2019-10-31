@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<title></title> 
+</head> 
+<script type="text/javascript"> 
+
+function GetParam(){	
+var path=window.location.href;	
+var pos=path.indexOf("=");	
+var parm; 
+if(pos > 0){	
+       parm=path.substring(pos+1,path.length); 
+} 
+document.getElementById('result').value=parm; 
+return parm;	
+} 
+</script> 
+<body onload="GetParam()"> 
+
+<input type="text" id="result" name="result" /> 
+
+</body> 
+</html>
